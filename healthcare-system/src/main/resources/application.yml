@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: healthcare-system
+
+  datasource:
+    # Use in-memory H2 database (for testing)
+    url: jdbc:h2:mem:testdb
+
+    # Use file-based H2 database (persistent)
+    #url: jdbc:h2:file:./data/healthdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+
+  jpa:
+    hibernate:
+      ddl-auto: update   # Creates/updates tables automatically
+    show-sql: true       # Show SQL queries in console
+
+  h2:
+    console:
+      enabled: true      # Enable H2 console
+      path: /h2-console  # Console URL -> http://localhost:8080/h2-console
+
+server:
+  port: 8080
