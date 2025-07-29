@@ -22,7 +22,9 @@ jobs:
           distribution: 'temurin'
 
       - name: 🧪 Build with Maven
+        working-directory: springboot-crud-api/healthcare-system
         run: mvn clean install
 
       - name: ✅ Run tests
+        working-directory: springboot-crud-api/healthcare-system
         run: mvn test
