@@ -1,7 +1,6 @@
 # 🧩 Spring Boot User CRUD API
 
-## CI Status :- ![Spring Boot CI](https://github.com/yasirunadeeshaa/springboot-crud-api/actions/workflows/ci.yml/badge.svg)
-![Codecov](https://codecov.io/gh/yasirunadeeshaa/springboot-crud-api/branch/main/graph/badge.svg)
+## CI Status :- ![Spring Boot CI](https://github.com/yasirunadeeshaa/springboot-crud-api/actions/workflows/ci.yml/badge.svg) || ![Codecov](https://codecov.io/gh/yasirunadeeshaa/springboot-crud-api/branch/main/graph/badge.svg)
 
 
 A simple Spring Boot RESTful API that provides CRUD operations for managing users.  
