@@ -28,3 +28,14 @@ jobs:
       - name: ✅ Run tests
         working-directory: healthcare-system
         run: mvn test
+
+      - name: 📊 Generate JaCoCo coverage report
+        run: mvn verify
+
+      - name: 📤 Upload coverage report to Codecov
+        uses: codecov/codecov-action@v4
+        with:
+          files: target/site/jacoco/jacoco.xml
+          flags: unittests
+          name: codecov-coverage
+          fail_ci_if_error: true
