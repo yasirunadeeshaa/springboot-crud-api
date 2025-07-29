@@ -21,8 +21,12 @@ class DoctorServiceTest {
     @Mock
     private DoctorRepository doctorRepository;
 
-    @Autowired
     private DoctorService doctorService;
+
+    @org.junit.jupiter.api.BeforeEach
+    void setUp() {
+        doctorService = new DoctorService(doctorRepository); // manual injection
+    }
 
     @Test
     void testGetAllDoctors() {
