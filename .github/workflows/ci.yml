@@ -11,6 +11,10 @@ jobs:
     name: Build and Test
     runs-on: ubuntu-latest
 
+    defaults:
+      run:
+        working-directory: healthcare-system
+
     steps:
       - name: ⬇️ Checkout code
         uses: actions/checkout@v4
@@ -30,6 +34,7 @@ jobs:
         run: mvn test
 
       - name: 📊 Generate JaCoCo coverage report
+        working-directory: healthcare-system
         run: mvn verify
 
       - name: 📤 Upload coverage report to Codecov
