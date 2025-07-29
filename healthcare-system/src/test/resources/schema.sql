@@ -1,5 +1,5 @@
-CREATE TABLE doctor (
-    id BIGINT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(255),
-    specialization VARCHAR(255)
+CREATE TABLE IF NOT EXISTS doctor (
+  id BIGINT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(255),
+  specialization VARCHAR(255)
 );
